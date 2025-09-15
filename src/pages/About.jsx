@@ -52,7 +52,7 @@ export default function About() {
           </div>
           <div>
             <img src="/images/author.jpg" alt="Portrait of Joseph Afolabi, author and motivational speaker, smiling confidently." className="rounded-2xl border soft-shadow" />
-            <img src="/images/speaking.jpg" alt="Joseph Afolabi delivering a talk to an audience, gesturing with passion." className="rounded-2xl border mt-6 soft-shadow" />
+            <img src="/images/speaking.JPG" alt="Joseph Afolabi delivering a talk to an audience, gesturing with passion." className="rounded-2xl border mt-6 soft-shadow" />
           </div>
         </div>
       </section>
