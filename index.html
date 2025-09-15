@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <script>
+      (function setInitialTheme(){
+        try {
+          const ls = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (ls === 'dark' || (!ls && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch(e){}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.svg" />
+    <title>Joseph Afolabi | Purpose, Power & Possibilities</title>
+    <meta name="description" content="Discover PURPOSE POWER and POSSIBILITIES by Joseph Afolabi—practical steps for happiness, faith-driven success, and real change." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Joseph Afolabi | Purpose, Power & Possibilities" />
+    <meta property="og:description" content="Practical, faith-aware steps for happiness, success and real change." />
+    <meta property="og:image" content="/images/book-cover.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body class="min-h-screen bg-white text-slate-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
