@@ -2,6 +2,7 @@ import React from 'react'
 import SEO from '../components/SEO.jsx'
 import BookSubnav from '../components/BookSubnav.jsx'
 import BuyBar from '../components/BuyBar.jsx'
+import { AMAZON_UK_URL } from '../config.js'
 
 const faqJsonLd = {
   "@context": "https://schema.org",
@@ -87,11 +88,14 @@ export default function Book() {
         <h2 className="text-2xl font-bold">Formats &amp; Buy</h2>
         <p className="mt-3 text-slate-700">Available in: Kindle (Amazon UK/US), Paperback (Amazon UK/US, select retailers)</p>
         <div className="mt-4 flex flex-wrap gap-3">
-          <a className="btn-gradient" href="https://www.amazon.co.uk/" target="_blank" rel="noopener noreferrer">Order on Amazon UK</a>
+          <a className="btn-gradient" href={AMAZON_UK_URL} target="_blank" rel="noopener noreferrer">Order on Amazon UK</a>
           <a className="btn btn-outline" href="https://www.ecampus.com/" target="_blank" rel="noopener noreferrer">View on eCampus</a>
         </div>
         <p className="text-xs text-slate-500 mt-3">“Amazon” and “Kindle” are trademarks of Amazon.com, Inc. or its affiliates. No endorsement implied.</p>
       </section>
+
+      {/* Sticky Buy Bar mount */}
+      <BuyBar amazonUrl={AMAZON_UK_URL} />
     </>
   )
 }

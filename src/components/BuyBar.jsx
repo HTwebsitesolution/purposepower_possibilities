@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { AMAZON_UK_URL } from '../config.js'
 
-export default function BuyBar({ amazonUrl="https://www.amazon.co.uk/", sampleUrl="/purpose-power-possibilities#sample" }) {
+export default function BuyBar({ amazonUrl=AMAZON_UK_URL, sampleUrl="/purpose-power-possibilities#sample" }) {
   const [visible, setVisible] = useState(false)
   const [dismissed, setDismissed] = useState(false)
   const sentinelRef = useRef(null)
