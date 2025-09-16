@@ -33,13 +33,13 @@ export default function Book() {
       <section id="sample" className="container-narrow mt-16">
         <h2 className="text-2xl font-bold">Read a Sample</h2>
         <p className="mt-3 text-slate-700">
-          Get a feel for the tone and practicality. Heres a short excerpt from Chapter 1:
+          Get a feel for the tone and practicality. Here's a short excerpt from Chapter 1:
         </p>
         <blockquote className="mt-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 italic text-slate-800 dark:text-slate-200">
-          Purpose doesnt arrive as a thunderclap. Its revealed in motionsmall, faithful steps that align your strengths with someone elses good.
+          Purpose doesn't arrive as a thunderclap. It's revealed in motion—small, faithful steps that align your strengths with someone else's good.
         </blockquote>
         <p className="mt-3 text-slate-700">
-          The book pairs reflection with simple actions, so youre never stuck at now what?.
+          The book pairs reflection with simple actions, so you're never stuck at “now what?”.
         </p>
         <div className="mt-4 flex gap-3">
           <a href="#buy" className="btn-gradient">See formats &amp; pricing</a>
