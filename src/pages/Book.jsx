@@ -30,6 +30,22 @@ export default function Book() {
       </section>
 
       <BookSubnav />
+      <section id="sample" className="container-narrow mt-16">
+        <h2 className="text-2xl font-bold">Read a Sample</h2>
+        <p className="mt-3 text-slate-700">
+          Get a feel for the tone and practicality. Heres a short excerpt from Chapter 1:
+        </p>
+        <blockquote className="mt-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 italic text-slate-800 dark:text-slate-200">
+          Purpose doesnt arrive as a thunderclap. Its revealed in motionsmall, faithful steps that align your strengths with someone elses good.
+        </blockquote>
+        <p className="mt-3 text-slate-700">
+          The book pairs reflection with simple actions, so youre never stuck at now what?.
+        </p>
+        <div className="mt-4 flex gap-3">
+          <a href="#buy" className="btn-gradient">See formats &amp; pricing</a>
+          <a href="#chapters" className="btn btn-outline">Explore chapters</a>
+        </div>
+      </section>
 
       <section className="container-narrow mt-16">
         <h2 className="text-2xl font-bold">Full Synopsis</h2>
@@ -88,14 +104,15 @@ export default function Book() {
         <h2 className="text-2xl font-bold">Formats &amp; Buy</h2>
         <p className="mt-3 text-slate-700">Available in: Kindle (Amazon UK/US), Paperback (Amazon UK/US, select retailers)</p>
         <div className="mt-4 flex flex-wrap gap-3">
+          <a className="btn btn-outline" href="#sample">Read Sample</a>
           <a className="btn-gradient" href={AMAZON_UK_URL} target="_blank" rel="noopener noreferrer">Order on Amazon UK</a>
           <a className="btn btn-outline" href="https://www.ecampus.com/" target="_blank" rel="noopener noreferrer">View on eCampus</a>
         </div>
         <p className="text-xs text-slate-500 mt-3">“Amazon” and “Kindle” are trademarks of Amazon.com, Inc. or its affiliates. No endorsement implied.</p>
       </section>
 
-      {/* Sticky Buy Bar mount */}
-      <BuyBar amazonUrl={AMAZON_UK_URL} />
+  {/* Sticky Buy Bar mount with sample link */}
+  <BuyBar amazonUrl={AMAZON_UK_URL} sampleUrl="#sample" />
     </>
   )
 }
