@@ -1,5 +1,6 @@
 import React from 'react'
 import SEO from '../components/SEO.jsx'
+import { AUTHOR_IMAGE, SPEAKING_IMAGE } from '../assetsConfig.js'
 import CTAButton from '../components/CTAButton.jsx'
 
 export default function About() {
@@ -14,8 +15,8 @@ export default function About() {
         <div className="mt-6 grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-6">
             <section>
-              <h2 className="text-xl font-semibold">Short Bio (Media Use)</h2>
-              <p className="mt-2 text-slate-700">Joseph Afolabi is a UK-based author, educator, and speaker best known for "PURPOSE POWER and POSSIBILITIES: How to be Happy and Successful." With decades of experience in teaching and leadership, Joseph's mission is to help adults discover their purpose, unlock personal power, and create real change. Available for speaking, workshops, and media commentary.</p>
+              <h2 className="text-xl font-semibold">Short Bio </h2>
+              <p className="mt-2 text-slate-700">Joseph Afolabi is an author, educator, and speaker best known for "PURPOSE POWER and POSSIBILITIES: How to be Happy and Successful." With decades of experience in teaching and leadership, Joseph's mission is to help adults discover their purpose, unlock personal power, and create real change. Available for speaking, workshops, and media commentary.</p>
             </section>
 
             <section>
@@ -55,14 +56,16 @@ export default function About() {
           {/* Images Column */}
           <div className="space-y-6">
             <img 
-              src="/images/author.jpg" 
-              alt="Portrait of Joseph Afolabi, author and motivational speaker, smiling confidently." 
-              className="w-full rounded-2xl border soft-shadow" 
+              src={AUTHOR_IMAGE}
+              alt="Portrait of Joseph Afolabi, author and motivational speaker, smiling confidently."
+              className="w-full rounded-2xl border soft-shadow"
+              loading="lazy" decoding="async" width="800" height="900"
             />
             <img 
-              src="/images/speaking.JPG" 
-              alt="Joseph Afolabi delivering a talk to an audience, gesturing with passion." 
-              className="w-full rounded-2xl border soft-shadow" 
+              src={SPEAKING_IMAGE}
+              alt="Joseph Afolabi delivering a talk to an audience, gesturing with passion."
+              className="w-full rounded-2xl border soft-shadow"
+              loading="lazy" decoding="async" width="800" height="600"
             />
           </div>
         </div>
