@@ -27,7 +27,7 @@ export default function BuyBar({ amazonUrl="https://www.amazon.co.uk/", sampleUr
     <div className="fixed inset-x-0 bottom-4 z-40 px-4">
       <div className="mx-auto max-w-3xl glass soft-shadow rounded-2xl border border-slate-200 dark:border-slate-800 p-3 flex items-center justify-between gap-3">
         <div className="flex items-center gap-3">
-          <img src="/images/book-cover.jpg" alt="" className="h-10 w-10 rounded-lg border border-slate-200 dark:border-slate-700" />
+          <img src="/images/book-cover.PNG" alt="" className="h-10 w-10 rounded-lg border border-slate-200 dark:border-slate-700" />
           <div>
             <p className="text-sm font-semibold">Purpose, Power & Possibilities</p>
             <p className="text-xs text-slate-600 dark:text-slate-300">Ready to start? Choose an option below.</p>

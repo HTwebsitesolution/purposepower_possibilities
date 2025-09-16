@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-export default function SEO({ title, description, image='/images/book-cover.jpg', jsonLd=null }) {
+export default function SEO({ title, description, image='/images/book-cover.PNG', jsonLd=null }) {
   useEffect(() => {
     if (title) document.title = title
     if (description) {
