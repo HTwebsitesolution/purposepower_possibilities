@@ -24,7 +24,7 @@ export default function BrandStripe() {
         <nav aria-label="Secondary">
           <ul className="flex gap-4">
             <li><NavLink to="/purpose-power-possibilities" className="text-primary-700 dark:text-primary-300 hover:underline">The Book</NavLink></li>
-            <li><NavLink to="/about-joseph#speaking" className="text-primary-700 dark:text-primary-300 hover:underline">Invite Joseph</NavLink></li>
+            <li><NavLink to="/speak" className="text-primary-700 dark:text-primary-300 hover:underline">Invite Joseph</NavLink></li>
           </ul>
         </nav>
       </div>

@@ -28,7 +28,7 @@ export default function Home() {
             <p className="lead mt-5">Step into the life you’re meant for. Unlock practical strategies to achieve happiness and success—with purpose you can live out every day.</p>
             <div className="mt-7 flex flex-wrap gap-3">
               <CTAButton to="/purpose-power-possibilities" ariaLabel="Get the Book">Get the Book</CTAButton>
-              <CTAButton to="/about-joseph#speaking" variant="outline" ariaLabel="Invite Joseph to Speak">Invite Joseph to Speak</CTAButton>
+              <CTAButton to="/speak" variant="outline" ariaLabel="Invite Joseph to Speak">Invite Joseph to Speak</CTAButton>
             </div>
           </div>
           <div className="flex justify-center">

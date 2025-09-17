@@ -45,7 +45,7 @@ export default function About() {
 
             <section>
               <div className="mt-6 flex flex-wrap gap-3">
-                <CTAButton to="/about-joseph#speaking">Invite Joseph to Speak</CTAButton>
+                <CTAButton to="/speak">Invite Joseph to Speak</CTAButton>
                 <CTAButton to="/purpose-power-possibilities" variant="outline">Buy the Book</CTAButton>
               </div>
             </section>
