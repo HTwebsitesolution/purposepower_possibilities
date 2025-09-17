@@ -32,7 +32,7 @@ export default function Header() {
 
             {/* Desktop nav */}
             <nav aria-label="Primary" className="hidden md:block">
-              <ul className="flex items-center gap-2">
+              <ul className="flex items-center gap-4">
                 {nav.map((item) => (
                   <li key={item.to}>
                     <NavLink
