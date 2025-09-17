@@ -7,7 +7,7 @@ export default function SpeakForm() {
       method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field"
-      action="/thanks"
+  action="/thanks/"
       className="card glass soft-shadow space-y-4"
       aria-describedby="privacy-note"
     >
