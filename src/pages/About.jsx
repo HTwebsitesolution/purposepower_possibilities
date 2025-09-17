@@ -15,12 +15,10 @@ export default function About() {
         <div className="mt-6 grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-6">
             <section>
-              <h2 className="text-xl font-semibold">Short Bio </h2>
               <p className="mt-2 text-slate-700">Joseph Afolabi is an author, educator, and speaker best known for "PURPOSE POWER and POSSIBILITIES: How to be Happy and Successful." With decades of experience in teaching and leadership, Joseph's mission is to help adults discover their purpose, unlock personal power, and create real change. Available for speaking, workshops, and media commentary.</p>
             </section>
 
             <section>
-              <h2 className="text-xl font-semibold">Long Bio</h2>
               <p className="mt-2 text-slate-700">Joseph Afolabi brings over two decades of experience in education, faith leadership, and personal development coaching to his writing and speaking. As a former headteacher and passionate community mentor, Joseph has witnessed first-hand how lives are changed—one mindset shift at a time. His book, "PURPOSE POWER and POSSIBILITIES," arose from a deep conviction that everyone can find their purpose and pursue it with courage.</p>
               <p className="mt-2 text-slate-700">Joseph's approach is practical and grounded—shaped by years spent helping adults in career transition, leading church initiatives, and providing workshops on resilience, faith, and action-taking. What stands out is his ability to blend motivational storytelling with actionable frameworks, enabling readers and listeners to move from inspiration to results. Whether in the classroom, on stage, or through his book, Joseph equips people to believe in possibility, step out in faith, and experience true, lasting happiness.</p>
             </section>

@@ -85,7 +85,7 @@ export default function Book() {
           <li><strong>Faith in Action:</strong> How belief translates to daily choices.</li>
           <li><strong>Possibility Living:</strong> Courage to pursue growth—every year, at any age.</li>
         </ul>
-        <p className="text-xs text-slate-500 mt-2">Thematic placeholders; confirm with author if possible.</p>
+        <p className="text-xs text-slate-500 mt-2">...and more chapters to encourage and empower you to take action.</p>
       </section>
 
       <section id="guide" className="container-narrow mt-16">
