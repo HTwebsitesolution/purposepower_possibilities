@@ -22,7 +22,10 @@
 .header-inner {
 	@apply bg-white/80 dark:bg-slate-900/80 backdrop-blur-2xl
 				 rounded-[1.4rem] ring-1 ring-white/20 dark:ring-slate-700/50
-				 px-4 md:px-8 py-4 flex items-center justify-between;
+				 px-4 md:px-8 py-4
+				 flex flex-row items-center justify-between gap-3
+				 md:grid md:items-center md:justify-items-stretch
+				 md:[grid-template-columns:minmax(0,auto)_minmax(0,1fr)_auto] md:gap-x-6 md:gap-y-3;
 	background: linear-gradient(135deg, 
 		rgba(255,255,255,0.9) 0%, 
 		rgba(255,255,255,0.7) 100%);
@@ -118,6 +121,7 @@
 	left: -100%;
 	width: 100%;
 	height: 100%;
+	pointer-events: none;
 	background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
 	transition: left 0.5s ease;
 }
@@ -125,7 +129,6 @@
 	background: rgba(37, 99, 235, 0.1);
 	border-color: rgba(37, 99, 235, 0.2);
 	color: rgb(37, 99, 235);
-	transform: translateY(-1px);
 	box-shadow: 
 		0 10px 25px rgba(37, 99, 235, 0.15),
 		0 4px 12px rgba(37, 99, 235, 0.1);
@@ -146,6 +149,7 @@
 	bottom: -2px; 
 	height: 3px; 
 	width: 0;
+	pointer-events: none;
 	background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
 	border-radius: 999px; 
 	transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -171,9 +175,21 @@
 	width: 80%; 
 }
 
-/* Mobile drawer */
-.mobile-panel { @apply md:hidden fixed inset-x-0 top-[72px] z-40 px-4 pb-4; display: none; }
-.mobile-panel.open { display: block; }
+/* Mobile drawer — z below .header-row stack; md+ never show (see .open vs md:hidden bug) */
+.mobile-panel {
+	@apply fixed inset-x-0 z-30 px-4 pb-4;
+	top: 5.75rem;
+	display: none;
+}
+.mobile-panel.open {
+	display: block;
+}
+@media (min-width: 768px) {
+	.mobile-panel,
+	.mobile-panel.open {
+		display: none !important;
+	}
+}
 .mobile-panel > ul { @apply glass rounded-2xl ring-1 ring-slate-200/70 dark:ring-slate-800/60 p-3; }
 
 /* Reduced motion */
@@ -204,11 +220,6 @@
 }
 .nav-link:hover::after { width: 100%; }
 .nav-link[aria-current="page"]::after { width: 100%; }
-
-/* Mobile drawer */
-.mobile-panel { @apply md:hidden fixed inset-x-0 top-[72px] z-40 px-4 pb-4; display: none; }
-.mobile-panel.open { display: block; }
-.mobile-panel > ul { @apply glass rounded-2xl ring-1 ring-slate-200/70 dark:ring-slate-800/60 p-3; }
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
