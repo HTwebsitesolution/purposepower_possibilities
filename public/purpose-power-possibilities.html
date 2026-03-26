@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6 Reasons to Read Purpose, Power & Possibilities — Joseph Afolabi</title>
+<meta name="description" content="Six reasons to read Purpose, Power & Possibilities by Joseph Afolabi — purpose, practical exercises, and real stories. Order on Amazon UK or Kindle.">
+<link rel="canonical" href="/purpose-power-possibilities.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+  /* ===== CSS VARIABLES ===== */
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8C96A;
+    --gold-dark: #A07830;
+    --black: #0E0E0E;
+    --off-black: #1A1A1A;
+    --dark-grey: #2C2C2C;
+    --mid-grey: #555;
+    --light-grey: #F5F3EE;
+    --cream: #FAF8F3;
+    --white: #FFFFFF;
+    --accent-red: #B84040;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--off-black);
+    overflow-x: hidden;
+  }
+
+  /* ===== ANNOUNCEMENT BAR ===== */
+  .announcement-bar {
+    background: var(--black);
+    color: var(--gold-light);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .announcement-bar a { color: var(--gold-light); text-decoration: underline; }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    background: var(--white);
+    border-bottom: 1px solid #E8E3D8;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 64px;
+  }
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    color: var(--black);
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--gold); }
+  .nav-links { display: flex; gap: 28px; list-style: none; }
+  .nav-links a {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--off-black);
+  }
+  .nav-links a:hover { color: var(--gold-dark); }
+  .nav-cta {
+    background: var(--gold);
+    color: var(--black);
+    padding: 10px 22px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--gold-dark); color: var(--white); }
+  .nav-mobile-menu { display: none; font-size: 24px; cursor: pointer; background: none; border: none; color: var(--off-black); }
+  .nav-mobile-drawer {
+    display: none;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--white);
+    border-bottom: 1px solid #E8E3D8;
+    padding: 8px 20px 20px;
+    z-index: 99;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  }
+  .nav-mobile-drawer.open { display: block; }
+  .nav-mobile-drawer ul { list-style: none; }
+  .nav-mobile-drawer a {
+    display: block;
+    padding: 14px 0;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--off-black);
+    border-bottom: 1px solid #f0ebe3;
+  }
+  .nav-mobile-drawer a:hover { color: var(--gold-dark); }
+  .nav-mobile-drawer a.drawer-cta {
+    margin-top: 12px;
+    text-align: center;
+    background: var(--gold);
+    color: var(--black) !important;
+    border: none !important;
+    padding: 12px;
+    border-radius: 0;
+  }
+  @media (min-width: 769px) {
+    .nav-mobile-drawer { display: none !important; }
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    position: relative;
+    background: var(--black);
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(ellipse at 20% 50%, rgba(201,168,76,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(201,168,76,0.08) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  .hero-grid-lines {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(201,168,76,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201,168,76,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    padding: 80px 40px;
+  }
+  .hero-text { }
+  .hero-label {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--black);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    margin-bottom: 24px;
+  }
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 5vw, 58px);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.08;
+    margin-bottom: 20px;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+  .hero-subtitle {
+    font-size: 17px;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.6;
+    margin-bottom: 32px;
+    font-weight: 300;
+  }
+  .hero-badges {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+  }
+  .hero-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+  .badge-icon {
+    width: 48px;
+    height: 48px;
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  .badge-text {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    max-width: 70px;
+    line-height: 1.3;
+  }
+  .hero-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--black);
+    padding: 16px 36px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .hero-btn:hover { background: var(--white); }
+  .hero-book-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .book-cover {
+    width: 280px;
+    height: 380px;
+    background: linear-gradient(135deg, #1A1A1A 0%, #2C2C2C 50%, #1A1A1A 100%);
+    border: 3px solid var(--gold);
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.6), -4px 0 0 rgba(201,168,76,0.3);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 24px;
+    text-align: center;
+    transform: perspective(800px) rotateY(-8deg);
+    transition: transform 0.4s;
+  }
+  .book-cover:hover { transform: perspective(800px) rotateY(0deg); }
+  .book-cover-ornament {
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin-bottom: 20px;
+  }
+  .book-cover-ornament::before, .book-cover-ornament::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+  }
+  .book-cover-ornament::before { left: -12px; }
+  .book-cover-ornament::after { right: -12px; }
+  .book-cover-top {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .book-cover-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+  .book-cover-divider {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    margin: 12px auto;
+  }
+  .book-cover-subtitle {
+    font-size: 11px;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    line-height: 1.5;
+  }
+  .book-cover-author {
+    font-family: 'DM Serif Display', serif;
+    font-size: 15px;
+    color: var(--gold-light);
+    margin-top: 20px;
+    font-style: italic;
+  }
+  .book-spine {
+    position: absolute;
+    left: -18px;
+    top: 0;
+    width: 18px;
+    height: 100%;
+    background: linear-gradient(to right, #0A0A0A, #1A1A1A);
+    border-left: 1px solid rgba(201,168,76,0.4);
+  }
+
+  /* ===== TRUST STRIP ===== */
+  .trust-strip {
+    background: var(--black);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+  }
+  .trust-item-icon { font-size: 20px; }
+  .trust-item-text { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.75); }
+
+  /* ===== SECTION WRAPPER ===== */
+  .section-wrapper { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
+
+  /* ===== REASONS SECTION ===== */
+  .reasons-header {
+    text-align: center;
+    padding: 80px 40px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .section-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold-dark);
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--off-black);
+    margin-bottom: 16px;
+  }
+  .section-title em { font-style: italic; color: var(--gold-dark); }
+  .section-subtitle {
+    font-size: 16px;
+    color: var(--mid-grey);
+    line-height: 1.65;
+  }
+
+  /* ===== REASON BLOCKS ===== */
+  .reason-block {
+    padding: 80px 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .reason-block.reverse { direction: rtl; }
+  .reason-block.reverse > * { direction: ltr; }
+  .reason-visual {
+    position: relative;
+  }
+  .reason-img-box {
+    aspect-ratio: 4/3;
+    background: var(--off-black);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .reason-img-box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(201,168,76,0.15), transparent 60%);
+  }
+  .reason-number-bg {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 120px;
+    font-weight: 900;
+    color: rgba(201,168,76,0.08);
+    line-height: 1;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .reason-icon-large {
+    font-size: 72px;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 4px 16px rgba(201,168,76,0.3));
+  }
+  .reason-badge-corner {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: var(--gold);
+    color: var(--black);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    z-index: 2;
+  }
+  .reason-content { }
+  .reason-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--gold-dark);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .reason-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 900;
+    line-height: 1.15;
+    color: var(--off-black);
+    margin-bottom: 18px;
+  }
+  .reason-title em { font-style: italic; color: var(--gold-dark); }
+  .reason-body {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--mid-grey);
+    margin-bottom: 24px;
+  }
+  .reason-body b { color: var(--off-black); font-weight: 600; }
+  .reason-bullets { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .reason-bullets li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--dark-grey);
+    line-height: 1.5;
+  }
+  .reason-bullets li::before {
+    content: '◆';
+    color: var(--gold);
+    font-size: 10px;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+
+  /* ===== DIVIDER ===== */
+  .gold-divider {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .gold-divider hr {
+    border: none;
+    border-top: 1px solid rgba(201,168,76,0.25);
+  }
+
+  /* ===== FEATURE STRIP ===== */
+  .feature-strip {
+    background: var(--off-black);
+    padding: 60px 40px;
+  }
+  .feature-strip-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .feature-strip-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 900;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .feature-strip-title em { color: var(--gold-light); font-style: italic; }
+  .feature-strip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .feature-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .feature-dot {
+    width: 36px;
+    height: 36px;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .feature-text b {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+  .feature-text span { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.5; }
+
+  /* ===== QUOTE BANNER ===== */
+  .quote-banner {
+    background: var(--gold);
+    padding: 60px 40px;
+    text-align: center;
+  }
+  .quote-banner blockquote {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(22px, 3.5vw, 36px);
+    font-style: italic;
+    color: var(--black);
+    max-width: 800px;
+    margin: 0 auto 16px;
+    line-height: 1.4;
+  }
+  .quote-banner cite {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(0,0,0,0.55);
+    font-style: normal;
+  }
+
+  /* ===== PRODUCT SECTION ===== */
+  .product-section {
+    background: var(--light-grey);
+    padding: 80px 40px;
+  }
+  .product-section-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+  .product-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-dark);
+    margin-bottom: 12px;
+  }
+  .product-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 3.5vw, 40px);
+    font-weight: 900;
+    line-height: 1.1;
+    color: var(--off-black);
+    margin-bottom: 20px;
+  }
+  .product-desc {
+    font-size: 16px;
+    color: var(--mid-grey);
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+  .product-bullets { list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 10px; }
+  .product-bullets li {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--dark-grey);
+    align-items: center;
+  }
+  .product-bullets li::before { content: '✓'; color: var(--gold-dark); font-weight: 700; }
+  .pricing-row {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .price-current {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--off-black);
+  }
+  .price-original {
+    font-size: 20px;
+    color: var(--mid-grey);
+    text-decoration: line-through;
+  }
+  .price-badge {
+    background: var(--accent-red);
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 4px 10px;
+  }
+  .formats-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+  .format-pill {
+    border: 1.5px solid var(--gold);
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--off-black);
+    cursor: pointer;
+    transition: all 0.2s;
+    background: transparent;
+  }
+  .format-pill.active, .format-pill:hover { background: var(--gold); color: var(--black); }
+  .cta-btn-large {
+    display: block;
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 18px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin-bottom: 16px;
+    border: 2px solid var(--black);
+  }
+  .cta-btn-large:hover { background: var(--off-black); }
+  .cta-btn-secondary {
+    display: block;
+    background: transparent;
+    border: 2px solid var(--gold);
+    color: var(--off-black);
+    text-align: center;
+    padding: 16px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .cta-btn-secondary:hover { background: var(--gold); color: var(--black); }
+  .product-trust-icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+  .mini-trust {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--mid-grey);
+  }
+  .mini-trust-icon { font-size: 16px; }
+  .product-visual-col { display: flex; flex-direction: column; gap: 20px; }
+  .author-card {
+    background: var(--white);
+    border: 1px solid #E8E3D8;
+    padding: 32px;
+  }
+  .author-avatar {
+    width: 72px;
+    height: 72px;
+    background: var(--off-black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .author-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .author-title-line {
+    font-size: 12px;
+    color: var(--gold-dark);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .author-bio { font-size: 14px; color: var(--mid-grey); line-height: 1.65; }
+
+  /* ===== CONFIDENCE SECTION ===== */
+  .confidence-section {
+    background: var(--black);
+    padding: 80px 40px;
+    text-align: center;
+  }
+  .confidence-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(26px, 4vw, 38px);
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 48px;
+  }
+  .confidence-title em { font-style: italic; color: var(--gold-light); }
+  .confidence-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .confidence-card {
+    border: 1px solid rgba(201,168,76,0.25);
+    padding: 40px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    transition: border-color 0.2s;
+  }
+  .confidence-card:hover { border-color: var(--gold); }
+  .confidence-icon { font-size: 40px; }
+  .confidence-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 4px;
+  }
+  .confidence-card-text { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.6; }
+
+  /* ===== REVIEWS ===== */
+  .reviews-section {
+    padding: 80px 40px;
+    background: var(--cream);
+  }
+  .reviews-header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .star-row { display: flex; justify-content: center; gap: 4px; font-size: 20px; color: var(--gold); margin-bottom: 12px; }
+  .reviews-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+  .review-card {
+    background: var(--white);
+    border: 1px solid #E8E3D8;
+    padding: 32px;
+  }
+  .review-stars { display: flex; gap: 3px; font-size: 14px; color: var(--gold); margin-bottom: 14px; }
+  .review-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--off-black);
+  }
+  .review-body { font-size: 14px; color: var(--mid-grey); line-height: 1.7; margin-bottom: 16px; font-style: italic; }
+  .review-author { font-size: 13px; font-weight: 600; color: var(--off-black); }
+  .review-verified { font-size: 11px; color: var(--gold-dark); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+
+  /* ===== FINAL CTA ===== */
+  .final-cta {
+    background: var(--off-black);
+    padding: 100px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .final-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 100%, rgba(201,168,76,0.12), transparent 70%);
+    pointer-events: none;
+  }
+  .final-cta-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+  .final-cta-eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+  .final-cta-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 5vw, 52px);
+    font-weight: 900;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .final-cta-title em { color: var(--gold-light); font-style: italic; }
+  .final-cta-sub { font-size: 17px; color: rgba(255,255,255,0.55); line-height: 1.65; margin-bottom: 40px; }
+  .final-cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .btn-gold {
+    background: var(--gold);
+    color: var(--black);
+    padding: 18px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s;
+    border: 2px solid var(--gold);
+  }
+  .btn-gold:hover { background: var(--gold-light); }
+  .btn-outline-white {
+    background: transparent;
+    color: var(--white);
+    padding: 18px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid rgba(255,255,255,0.35);
+    transition: all 0.2s;
+  }
+  .btn-outline-white:hover { border-color: var(--white); }
+  .final-guarantee {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .guarantee-item { display: flex; align-items: center; gap: 8px; color: rgba(255,255,255,0.45); font-size: 13px; }
+  .guarantee-item span { font-size: 16px; }
+
+  /* ===== FOOTER ===== */
+  footer {
+    background: var(--black);
+    padding: 60px 40px 30px;
+  }
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 14px;
+  }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { font-size: 14px; color: rgba(255,255,255,0.4); line-height: 1.6; }
+  .footer-col-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-links a { color: rgba(255,255,255,0.45); font-size: 14px; text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--gold-light); }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .footer-copyright { font-size: 12px; color: rgba(255,255,255,0.3); }
+  .hp-field {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .footer-bottom { position: relative; }
+  .newsletter-form { display: flex; gap: 0; flex-wrap: wrap; }
+  .newsletter-form input {
+    padding: 12px 16px;
+    font-size: 13px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.05);
+    color: var(--white);
+    width: 220px;
+    outline: none;
+    font-family: 'DM Sans', sans-serif;
+  }
+  .newsletter-form input::placeholder { color: rgba(255,255,255,0.3); }
+  .newsletter-form button {
+    background: var(--gold);
+    color: var(--black);
+    border: none;
+    padding: 12px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    transition: background 0.2s;
+  }
+  .newsletter-form button:hover { background: var(--gold-light); }
+
+  /* ===== SCROLL ANIMATIONS ===== */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+  .fade-in-delay-1 { transition-delay: 0.1s; }
+  .fade-in-delay-2 { transition-delay: 0.2s; }
+  .fade-in-delay-3 { transition-delay: 0.3s; }
+
+  /* ===== MOBILE ===== */
+  @media (max-width: 768px) {
+    nav { padding: 0 20px; }
+    .nav-links, .nav-cta { display: none !important; }
+    .nav-mobile-menu { display: block; }
+    .hero-inner { grid-template-columns: 1fr; padding: 60px 20px; gap: 40px; }
+    .hero-book-visual { order: -1; }
+    .book-cover { transform: none; width: 220px; height: 300px; }
+    .reason-block { grid-template-columns: 1fr; gap: 40px; padding: 60px 20px; }
+    .reason-block.reverse { direction: ltr; }
+    .feature-strip-grid { grid-template-columns: 1fr; }
+    .confidence-grid { grid-template-columns: 1fr; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .product-section-inner { grid-template-columns: 1fr; gap: 40px; }
+    .footer-top { grid-template-columns: 1fr 1fr; }
+    .trust-strip { gap: 30px; }
+    .section-wrapper, .reasons-header { padding: 40px 20px 20px; }
+    .reviews-section, .confidence-section, .product-section, .final-cta { padding: 60px 20px; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+  📚 Now Available on Amazon &amp; Kindle — <a href="https://www.amazon.co.uk/dp/B009UIO1YE">Order Your Copy Today</a>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <a class="nav-logo" href="/">Joseph <span>Afolabi</span></a>
+  <ul class="nav-links">
+    <li><a href="/about-joseph">About</a></li>
+    <li><a href="/purpose-power-possibilities">The Book</a></li>
+    <li><a href="/speak">Speaking</a></li>
+    <li><a href="#reader-reviews">Reviews</a></li>
+  </ul>
+  <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="nav-cta">Get the Book</a>
+  <button type="button" class="nav-mobile-menu" onclick="toggleMenu()" aria-expanded="false" aria-controls="nav-mobile-drawer" aria-label="Open menu">☰</button>
+</nav>
+<div id="nav-mobile-drawer" class="nav-mobile-drawer" aria-hidden="true">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about-joseph">About</a></li>
+    <li><a href="/purpose-power-possibilities">The Book (full page)</a></li>
+    <li><a href="/speak">Speaking</a></li>
+    <li><a href="#reader-reviews" onclick="closeMobileMenu()">Reviews</a></li>
+    <li><a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="drawer-cta" onclick="closeMobileMenu()">Get the Book</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-inner">
+    <div class="hero-text fade-in">
+      <div class="hero-label">The Life-Changing Book</div>
+      <h1 class="hero-title">
+        6 REASONS TO READ<br>
+        <em>Purpose, Power &amp; Possibilities</em>
+      </h1>
+      <p class="hero-subtitle">The book that has helped thousands discover their unique potential, break free from limiting beliefs, and live a truly happy and successful life.</p>
+      <div class="hero-badges">
+        <div class="hero-badge">
+          <div class="badge-icon">⭐</div>
+          <div class="badge-text">5-Star Reviews</div>
+        </div>
+        <div class="hero-badge">
+          <div class="badge-icon">✍️</div>
+          <div class="badge-text">Real Life Stories</div>
+        </div>
+        <div class="hero-badge">
+          <div class="badge-icon">🎯</div>
+          <div class="badge-text">Practical Exercises</div>
+        </div>
+      </div>
+      <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="hero-btn">Get Your Copy Now</a>
+    </div>
+    <div class="hero-book-visual fade-in fade-in-delay-2">
+      <div class="book-cover">
+        <div class="book-spine"></div>
+        <div class="book-cover-top">Joseph Afolabi</div>
+        <div class="book-cover-ornament"></div>
+        <div class="book-cover-title">Purpose,<br>Power &amp;<br>Possibilities</div>
+        <div class="book-cover-divider"></div>
+        <div class="book-cover-subtitle">How to Be Happy<br>and Successful</div>
+        <div class="book-cover-author">Joseph Afolabi</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+  <div class="trust-item">
+    <div class="trust-item-icon">📖</div>
+    <div class="trust-item-text">Available in Paperback &amp; Kindle</div>
+  </div>
+  <div class="trust-item">
+    <div class="trust-item-icon">⭐</div>
+    <div class="trust-item-text">5-Star Rated</div>
+  </div>
+  <div class="trust-item">
+    <div class="trust-item-icon">🚀</div>
+    <div class="trust-item-text">Practical Exercises Inside</div>
+  </div>
+  <div class="trust-item">
+    <div class="trust-item-icon">🌍</div>
+    <div class="trust-item-text">Ships Worldwide</div>
+  </div>
+</div>
+
+<!-- REASONS HEADER -->
+<div class="reasons-header fade-in">
+  <div class="section-eyebrow">Why This Book?</div>
+  <h2 class="section-title">6 REASONS THIS BOOK WILL CHANGE YOUR <em>LIFE</em></h2>
+  <p class="section-subtitle">From ordinary beginnings to extraordinary outcomes — Joseph Afolabi has lived it, coached it, and now written it down for you.</p>
+</div>
+
+<!-- REASON 1 -->
+<div class="reason-block fade-in">
+  <div class="reason-visual">
+    <div class="reason-img-box">
+      <div class="reason-number-bg">01</div>
+      <div class="reason-icon-large">🧭</div>
+      <div class="reason-badge-corner">Reason #1</div>
+    </div>
+  </div>
+  <div class="reason-content">
+    <div class="reason-number">Reason 01 of 06</div>
+    <h2 class="reason-title">DISCOVER YOUR <em>TRUE PURPOSE</em> IN LIFE</h2>
+    <p class="reason-body">Most people go through life never clearly defining what they were put here to do. <b>This book changes that.</b> Drawing from 20+ years of education and coaching, Joseph Afolabi guides you step-by-step through a journey of self-discovery that feels as personal as it does transformational.</p>
+    <ul class="reason-bullets">
+      <li>Identify what makes you unique and irreplaceable</li>
+      <li>Understand the difference between purpose and meaning</li>
+      <li>Stop drifting — start living with intentional direction</li>
+    </ul>
+  </div>
+</div>
+
+<div class="gold-divider"><hr></div>
+
+<!-- REASON 2 -->
+<div class="reason-block reverse fade-in">
+  <div class="reason-visual">
+    <div class="reason-img-box">
+      <div class="reason-number-bg">02</div>
+      <div class="reason-icon-large">💪</div>
+      <div class="reason-badge-corner">Reason #2</div>
+    </div>
+  </div>
+  <div class="reason-content">
+    <div class="reason-number">Reason 02 of 06</div>
+    <h2 class="reason-title">BREAK FREE FROM <em>LIMITING BELIEFS</em></h2>
+    <p class="reason-body">The biggest obstacles between you and the life you want aren't external — they're in your mind. <b>Joseph Afolabi knows this firsthand.</b> His remarkable journey from humble origins is a masterclass in identifying and dismantling the beliefs that hold you back.</p>
+    <ul class="reason-bullets">
+      <li>Recognise limiting patterns that keep you stuck</li>
+      <li>Challenge the narrative you've accepted about yourself</li>
+      <li>Rewire your thinking for confidence and courageous action</li>
+    </ul>
+  </div>
+</div>
+
+<div class="gold-divider"><hr></div>
+
+<!-- REASON 3 -->
+<div class="reason-block fade-in">
+  <div class="reason-visual">
+    <div class="reason-img-box">
+      <div class="reason-number-bg">03</div>
+      <div class="reason-icon-large">🔑</div>
+      <div class="reason-badge-corner">Reason #3</div>
+    </div>
+  </div>
+  <div class="reason-content">
+    <div class="reason-number">Reason 03 of 06</div>
+    <h2 class="reason-title">REAL STORIES, <em>REAL RESULTS</em></h2>
+    <p class="reason-body">This isn't theory — it's lived experience. The book is packed with <b>real-life anecdotes</b> and motivational stories that prove: all things really can be possible. Readers consistently say they found themselves nodding along and feeling like the author was speaking directly to them.</p>
+    <ul class="reason-bullets">
+      <li>Motivational anecdotes blended with practical guidance</li>
+      <li>Stories of transformation from real people, real lives</li>
+      <li>A writing style that's warm, honest, and deeply relatable</li>
+    </ul>
+  </div>
+</div>
+
+<div class="gold-divider"><hr></div>
+
+<!-- REASON 4 -->
+<div class="reason-block reverse fade-in">
+  <div class="reason-visual">
+    <div class="reason-img-box">
+      <div class="reason-number-bg">04</div>
+      <div class="reason-icon-large">📋</div>
+      <div class="reason-badge-corner">Reason #4</div>
+    </div>
+  </div>
+  <div class="reason-content">
+    <div class="reason-number">Reason 04 of 06</div>
+    <h2 class="reason-title">PACKED WITH <em>PRACTICAL EXERCISES</em></h2>
+    <p class="reason-body">Reading is one thing. <b>Transformation requires action.</b> Every chapter in this book is built around exercises that help you go from insight to implementation. These aren't generic worksheets — they're carefully crafted tools refined over 20+ years of coaching.</p>
+    <ul class="reason-bullets">
+      <li>Exercises that uncover new possibilities in your life</li>
+      <li>Step-by-step tools to focus in on your unique path</li>
+      <li>Life-changing prompts that create measurable momentum</li>
+    </ul>
+  </div>
+</div>
+
+<div class="gold-divider"><hr></div>
+
+<!-- REASON 5 -->
+<div class="reason-block fade-in">
+  <div class="reason-visual">
+    <div class="reason-img-box">
+      <div class="reason-number-bg">05</div>
+      <div class="reason-icon-large">🎓</div>
+      <div class="reason-badge-corner">Reason #5</div>
+    </div>
+  </div>
+  <div class="reason-content">
+    <div class="reason-number">Reason 05 of 06</div>
+    <h2 class="reason-title">WRITTEN BY SOMEONE WHO <em>LIVED IT</em></h2>
+    <p class="reason-body">Joseph Afolabi is an educator, headteacher, life coach, and speaker with over <b>20 years of experience</b> helping people of all backgrounds thrive. His authority doesn't come from a title — it comes from the journey. And that journey is woven into every page of this book.</p>
+    <ul class="reason-bullets">
+      <li>Former headteacher with 20+ years in education and leadership</li>
+      <li>Specialises in helping people of all abilities unlock potential</li>
+      <li>Coaches schools, organisations, and individuals globally</li>
+    </ul>
+  </div>
+</div>
+
+<div class="gold-divider"><hr></div>
+
+<!-- REASON 6 -->
+<div class="reason-block reverse fade-in">
+  <div class="reason-visual">
+    <div class="reason-img-box">
+      <div class="reason-number-bg">06</div>
+      <div class="reason-icon-large">🌟</div>
+      <div class="reason-badge-corner">Reason #6</div>
+    </div>
+  </div>
+  <div class="reason-content">
+    <div class="reason-number">Reason 06 of 06</div>
+    <h2 class="reason-title">YOU'LL WANT TO TAKE <em>SERIOUS ACTION</em></h2>
+    <p class="reason-body">"Makes you want to take some serious action in your life — makes you feel you can." That's how one reader described it. <b>This book doesn't just inspire you to dream bigger.</b> It gives you the tools, the stories, and the belief to actually go and do it.</p>
+    <ul class="reason-bullets">
+      <li>Beautiful, honest, and deeply inspiring from cover to cover</li>
+      <li>Encourages courageous decisions and positive risk-taking</li>
+      <li>Reminds you: it's your life — go live your dreams</li>
+    </ul>
+  </div>
+</div>
+
+<!-- FEATURE STRIP -->
+<div class="feature-strip">
+  <div class="feature-strip-inner">
+    <h3 class="feature-strip-title">The Book, <em>Redefined</em></h3>
+    <div class="feature-strip-grid">
+      <div class="feature-item">
+        <div class="feature-dot">💡</div>
+        <div class="feature-text">
+          <b>Thought-Provoking Insights</b>
+          <span>Draws the reader to discover that all things truly can be possible</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-dot">📚</div>
+        <div class="feature-text">
+          <b>Theoretical + Practical Blend</b>
+          <span>Motivational anecdotes woven with real guidance and exercises</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-dot">🏆</div>
+        <div class="feature-text">
+          <b>Authority You Can Trust</b>
+          <span>Written by a former headteacher and life coach with 20+ years experience</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-dot">❤️</div>
+        <div class="feature-text">
+          <b>Genuinely Wants You to Succeed</b>
+          <span>Readers say you feel the author's care for your potential on every page</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-dot">🌱</div>
+        <div class="feature-text">
+          <b>For Anyone, Any Stage</b>
+          <span>Whether you're searching for direction or ready to level up — this is for you</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-dot">📱</div>
+        <div class="feature-text">
+          <b>Paperback &amp; Kindle</b>
+          <span>Read it how you want — on paper or on any device via Amazon Kindle</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- QUOTE BANNER -->
+<div class="quote-banner">
+  <blockquote>"A thought provoking book that draws the reader to discover that all things CAN really be possible."</blockquote>
+  <cite>— Verified Reader Review</cite>
+</div>
+
+<!-- PRODUCT SECTION -->
+<div class="product-section" id="order">
+  <div class="product-section-inner">
+    <div class="product-info fade-in">
+      <div class="product-label">Guaranteed For Life — Your Best Self Awaits</div>
+      <h2 class="product-title">Purpose, Power &amp; Possibilities: How to Be Happy and Successful</h2>
+      <p class="product-desc">Join thousands of readers who've taken the journey with Joseph Afolabi — from ordinary beginnings to an extraordinary life. This book is your practical guide to discovering your purpose and living it out.</p>
+      <ul class="product-bullets">
+        <li>Clear frameworks to replace doubt with purposeful action</li>
+        <li>Slim, focused structure — every chapter earns its place</li>
+        <li>Modular approach — revisit chapters as you grow</li>
+        <li>Available in paperback and Kindle editions (check Amazon for current formats)</li>
+      </ul>
+      <div class="pricing-row">
+        <span class="price-current">£9.99</span>
+        <span class="price-original">£14.99</span>
+        <span class="price-badge">33% OFF</span>
+      </div>
+      <div class="formats-row">
+        <button type="button" class="format-pill active" data-format="paperback">Paperback</button>
+        <button type="button" class="format-pill" data-format="kindle">Kindle</button>
+      </div>
+      <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="cta-btn-large">Order on Amazon Now</a>
+      <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="cta-btn-secondary">Preview on Kindle — Free Sample</a>
+      <div class="product-trust-icons">
+        <div class="mini-trust"><span class="mini-trust-icon">🚀</span> Fast Delivery</div>
+        <div class="mini-trust"><span class="mini-trust-icon">↩️</span> Easy Returns</div>
+        <div class="mini-trust"><span class="mini-trust-icon">🔒</span> Secure Checkout</div>
+      </div>
+    </div>
+    <div class="product-visual-col fade-in fade-in-delay-2">
+      <div class="author-card">
+        <div class="author-avatar">👨‍🏫</div>
+        <div class="author-name">Joseph Afolabi</div>
+        <div class="author-title-line">Author · Educator · Speaker · Life Coach</div>
+        <p class="author-bio">Joseph is an experienced educator and school leader with over 20 years in special needs and inclusive education. A former headteacher, he now works with schools, organisations, and individuals to unlock potential, build confidence, and inspire courageous action. His story — from ordinary boy to determined change-maker — is the heart of this book.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONFIDENCE SECTION -->
+<div class="confidence-section">
+  <h2 class="confidence-title">WE'RE CONFIDENT IN <em>THIS BOOK</em></h2>
+  <div class="confidence-grid">
+    <div class="confidence-card fade-in">
+      <div class="confidence-icon">🌍</div>
+      <div class="confidence-card-title">Ships Worldwide</div>
+      <p class="confidence-card-text">Order your copy from Amazon with fast, reliable international shipping. Or get instant access on Kindle.</p>
+    </div>
+    <div class="confidence-card fade-in fade-in-delay-1">
+      <div class="confidence-icon">💰</div>
+      <div class="confidence-card-title">Risk-Free Purchase</div>
+      <p class="confidence-card-text">Amazon's buyer protection gives you peace of mind. If it's not right for you, returning is simple and hassle-free.</p>
+    </div>
+    <div class="confidence-card fade-in fade-in-delay-2">
+      <div class="confidence-icon">⭐</div>
+      <div class="confidence-card-title">5-Star Rated</div>
+      <p class="confidence-card-text">Readers across the UK and beyond have given this book their highest praise — consistently calling it inspiring, honest, and life-changing.</p>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<div class="reviews-section" id="reader-reviews">
+  <div class="reviews-header fade-in">
+    <div class="star-row">★★★★★</div>
+    <div class="section-eyebrow">Verified Reader Reviews</div>
+    <h2 class="section-title">Over <em>5 Stars</em> — Thousands of Happy Readers</h2>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card fade-in">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-title">All Things CAN Really Be Possible</div>
+      <p class="review-body">"A thought provoking book that draws the reader to discover that all things CAN really be possible. Well written with real life stories and events that strengthen and support the Author's main points."</p>
+      <div class="review-author">— Verified Reader</div>
+      <div class="review-verified">✓ Verified Purchase</div>
+    </div>
+    <div class="review-card fade-in fade-in-delay-1">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-title">Prompted Me to Take a Risk</div>
+      <p class="review-body">"A great book, full of encouragement and positive insights. Through reading it, I stepped out and took a risk in an area of my life in which there was a vacuum — and amazing things happened. This was the prompt I needed!"</p>
+      <div class="review-author">— Verified Reader</div>
+      <div class="review-verified">✓ Verified Purchase</div>
+    </div>
+    <div class="review-card fade-in fade-in-delay-2">
+      <div class="review-stars">★★★★★</div>
+      <div class="review-title">Makes You Want to Take Action</div>
+      <p class="review-body">"Beautiful, honest and inspiring. Makes you want to take some serious action in your life — makes you feel you can. Enjoyed every page. Highly recommended for anyone wishing to discover their true potential."</p>
+      <div class="review-author">— Verified Reader</div>
+      <div class="review-verified">✓ Verified Purchase</div>
+    </div>
+  </div>
+</div>
+
+<!-- FINAL CTA -->
+<div class="final-cta">
+  <div class="final-cta-inner">
+    <div class="final-cta-eyebrow">Your Life Is Waiting</div>
+    <h2 class="final-cta-title">READY TO LIVE WITH PURPOSE, <em>POWER &amp; POSSIBILITIES?</em></h2>
+    <p class="final-cta-sub">Join thousands of readers who've taken the first step. This book won't just sit on your shelf — it'll change how you think, act, and live.</p>
+    <div class="final-cta-buttons">
+      <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="btn-gold">Order Your Copy Now</a>
+      <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="btn-outline-white">Read Kindle Sample Free</a>
+    </div>
+    <div class="final-guarantee">
+      <div class="guarantee-item"><span>📦</span> Fast Amazon Delivery</div>
+      <div class="guarantee-item"><span>⭐</span> 5-Star Rated</div>
+      <div class="guarantee-item"><span>↩️</span> Easy Returns via Amazon</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Joseph <span>Afolabi</span></div>
+        <p class="footer-tagline">Author, educator, and life coach with 20+ years helping people of all backgrounds discover their purpose and unlock their true potential.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">The Book</div>
+        <ul class="footer-links">
+          <li><a href="/purpose-power-possibilities">About the Book (site)</a></li>
+          <li><a href="https://www.amazon.co.uk/dp/B009UIO1YE">Order on Amazon</a></li>
+          <li><a href="https://www.amazon.co.uk/dp/B009UIO1YE">Kindle edition</a></li>
+          <li><a href="/purpose-power-possibilities#sample">Read sample (site)</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Explore</div>
+        <ul class="footer-links">
+          <li><a href="/about-joseph">About Joseph</a></li>
+          <li><a href="/speak">Speaking</a></li>
+          <li><a href="/speak">Schools &amp; organisations</a></li>
+          <li><a href="/">Main site home</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Connect</div>
+        <ul class="footer-links">
+          <li><a href="/speak">Contact / invite to speak</a></li>
+          <li><a href="mailto:booking@josephafolabi.com">Email Joseph</a></li>
+          <li><a href="/purpose-power-possibilities.html#order">This page — order section</a></li>
+          <li><a href="https://www.amazon.co.uk/dp/B009UIO1YE" target="_blank" rel="noopener noreferrer">Amazon UK store</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copyright">© 2026 Joseph Afolabi. All rights reserved.</div>
+      <form class="newsletter-form" name="purpose-starter-worksheet" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks">
+        <input type="hidden" name="form-name" value="purpose-starter-worksheet" />
+        <p class="hp-field" aria-hidden="true"><label>Don’t fill this in: <input name="bot-field" /></label></p>
+        <input type="email" name="email" required placeholder="Your email address" id="newsletter-email" autocomplete="email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll animations
+  const fadeEls = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); }
+    });
+  }, { threshold: 0.12 });
+  fadeEls.forEach(el => observer.observe(el));
+
+  // Format pill toggle (visual only; both formats use the same Amazon product page)
+  document.querySelectorAll('.format-pill').forEach(pill => {
+    pill.addEventListener('click', function() {
+      document.querySelectorAll('.format-pill').forEach(p => p.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  function toggleMenu() {
+    var d = document.getElementById('nav-mobile-drawer');
+    var btn = document.querySelector('.nav-mobile-menu');
+    var open = d.classList.toggle('open');
+    d.setAttribute('aria-hidden', open ? 'false' : 'true');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+
+  function closeMobileMenu() {
+    var d = document.getElementById('nav-mobile-drawer');
+    d.classList.remove('open');
+    d.setAttribute('aria-hidden', 'true');
+    var btn = document.querySelector('.nav-mobile-menu');
+    if (btn) btn.setAttribute('aria-expanded', 'false');
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeMobileMenu();
+  });
+</script>
+</body>
+</html>
