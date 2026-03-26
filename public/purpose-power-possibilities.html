@@ -253,6 +253,15 @@
     justify-content: center;
     align-items: center;
   }
+  .book-cover-img {
+    width: min(340px, 82vw);
+    border: 3px solid var(--gold);
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.6), -4px 0 0 rgba(201,168,76,0.3);
+    transform: perspective(800px) rotateY(-8deg);
+    transition: transform 0.4s;
+    background: #111;
+  }
+  .book-cover-img:hover { transform: perspective(800px) rotateY(0deg); }
   .book-cover {
     width: 280px;
     height: 380px;
@@ -706,6 +715,18 @@
   }
   .mini-trust-icon { font-size: 16px; }
   .product-visual-col { display: flex; flex-direction: column; gap: 20px; }
+  .product-cover-card {
+    background: var(--off-black);
+    border: 1px solid rgba(201,168,76,0.4);
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+  }
+  .product-cover-img {
+    width: min(300px, 100%);
+    border: 2px solid var(--gold);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.28);
+  }
   .author-card {
     background: var(--white);
     border: 1px solid #E8E3D8;
@@ -720,6 +741,15 @@
     align-items: center;
     justify-content: center;
     font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .author-avatar-img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 2px solid var(--gold);
     margin-bottom: 16px;
   }
   .author-name {
@@ -986,6 +1016,7 @@
     .nav-mobile-menu { display: block; }
     .hero-inner { grid-template-columns: 1fr; padding: 60px 20px; gap: 40px; }
     .hero-book-visual { order: -1; }
+    .book-cover-img { transform: none; }
     .book-cover { transform: none; width: 220px; height: 300px; }
     .reason-block { grid-template-columns: 1fr; gap: 40px; padding: 60px 20px; }
     .reason-block.reverse { direction: ltr; }
@@ -1005,7 +1036,7 @@
 
 <!-- ANNOUNCEMENT BAR -->
 <div class="announcement-bar">
-  📚 Now Available on Amazon &amp; Kindle — <a href="https://www.amazon.co.uk/dp/B009UIO1YE">Order Your Copy Today</a>
+  📚 Now Available on Amazon &amp; Kindle — <a href="https://www.amazon.co.uk/dp/B009UIO1YE">Get the Book Today</a>
 </div>
 
 <!-- NAVBAR -->
@@ -1060,15 +1091,7 @@
       <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="hero-btn">Get Your Copy Now</a>
     </div>
     <div class="hero-book-visual fade-in fade-in-delay-2">
-      <div class="book-cover">
-        <div class="book-spine"></div>
-        <div class="book-cover-top">Joseph Afolabi</div>
-        <div class="book-cover-ornament"></div>
-        <div class="book-cover-title">Purpose,<br>Power &amp;<br>Possibilities</div>
-        <div class="book-cover-divider"></div>
-        <div class="book-cover-subtitle">How to Be Happy<br>and Successful</div>
-        <div class="book-cover-author">Joseph Afolabi</div>
-      </div>
+      <img class="book-cover-img" src="https://josephafolabi.com/images/book-cover.PNG" alt="Front cover of Purpose, Power &amp; Possibilities by Joseph Afolabi">
     </div>
   </div>
 </section>
@@ -1315,8 +1338,8 @@
         <button type="button" class="format-pill active" data-format="paperback">Paperback</button>
         <button type="button" class="format-pill" data-format="kindle">Kindle</button>
       </div>
-      <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="cta-btn-large">Order on Amazon Now</a>
-      <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="cta-btn-secondary">Preview on Kindle — Free Sample</a>
+      <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="cta-btn-large">Get the Book on Amazon</a>
+      <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="cta-btn-secondary">Read Kindle Sample</a>
       <div class="product-trust-icons">
         <div class="mini-trust"><span class="mini-trust-icon">🚀</span> Fast Delivery</div>
         <div class="mini-trust"><span class="mini-trust-icon">↩️</span> Easy Returns</div>
@@ -1324,8 +1347,11 @@
       </div>
     </div>
     <div class="product-visual-col fade-in fade-in-delay-2">
+      <div class="product-cover-card">
+        <img class="product-cover-img" src="https://josephafolabi.com/images/book-cover.PNG" alt="Purpose, Power &amp; Possibilities book cover">
+      </div>
       <div class="author-card">
-        <div class="author-avatar">👨‍🏫</div>
+        <img class="author-avatar-img" src="https://josephafolabi.com/images/author.jpg" alt="Portrait photo of Joseph Afolabi">
         <div class="author-name">Joseph Afolabi</div>
         <div class="author-title-line">Author · Educator · Speaker · Life Coach</div>
         <p class="author-bio">Joseph is an experienced educator and school leader with over 20 years in special needs and inclusive education. A former headteacher, he now works with schools, organisations, and individuals to unlock potential, build confidence, and inspire courageous action. His story — from ordinary boy to determined change-maker — is the heart of this book.</p>
@@ -1395,8 +1421,8 @@
     <h2 class="final-cta-title">READY TO LIVE WITH PURPOSE, <em>POWER &amp; POSSIBILITIES?</em></h2>
     <p class="final-cta-sub">Join thousands of readers who've taken the first step. This book won't just sit on your shelf — it'll change how you think, act, and live.</p>
     <div class="final-cta-buttons">
-      <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="btn-gold">Order Your Copy Now</a>
-      <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="btn-outline-white">Read Kindle Sample Free</a>
+      <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="btn-gold">Get the Book</a>
+      <a href="https://www.amazon.co.uk/dp/B009UIO1YE" class="btn-outline-white">Read Kindle Sample</a>
     </div>
     <div class="final-guarantee">
       <div class="guarantee-item"><span>📦</span> Fast Amazon Delivery</div>
